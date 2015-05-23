@@ -1,23 +1,34 @@
+
+/*
+
+1. 	Write a C++ program to read series of names, one per line, from standard input and write these names spelled in reverse order
+	to the standard output using I/O redirection and pipes. Repeat the exercise using an input file specified by the user instead 
+	of the standard input and using an output file specified by the user instead of the standard output.
+
+*/
+
+
+
 #include <iostream>
 #include <fstream>
 #include <cstring>
 
 using namespace std;
 
-class student{
+class student{              // student class
 public:
 	char name[20];
 }rec[25];
 
 fstream f1, f2;
-char fname1[25], fname2[25];
+char fname1[25], fname2[25];	
 	
 
 int main(void){
 	char name[25];
 	int choice, n, i, j, len=0;
 
-	cout<<"1. Standard I/O \n2. File I/O \n";
+	cout<<"1. Console I/O \n2. File I/O \n";
 	cout<<"Enter your choice:\n";
 	cin>>choice;
 
@@ -26,8 +37,6 @@ int main(void){
 			case 1:
 					cout<<"Enter the number of students: \n";
 					cin>>n;
-					//cout<<"File name to which ";
-					//cin>>fname1;
 					strcpy(fname1, "st.txt");
 					f1.open(fname1, ios::out);
 					for(i=1; i<=n; i++){
