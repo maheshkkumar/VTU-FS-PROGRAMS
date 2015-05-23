@@ -37,7 +37,7 @@ int main(void){
 			case 1:
 					cout<<"Enter the number of students: \n";
 					cin>>n;
-					strcpy(fname1, "st.txt");
+					strcpy(fname1, "st.txt");   // use st.txt as the file name to read the names, inorder to reverse them and then to append them back to file 2 with file name of your own choice.
 					f1.open(fname1, ios::out);
 					for(i=1; i<=n; i++){
 						cout<<"Enter "<< i <<" student name: \n";
