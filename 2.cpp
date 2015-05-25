@@ -191,7 +191,7 @@ void display(){
 int main(void){
 	int choice;
 	do{
-		cout<<"1.Pack\n2.Unpack\n3.Search\n4.Display\n";
+		cout<<"1.Pack\n2.Unpack\n3.Search\n4.Displa\yn";
 		cout<<"Enter your choice\n";
 		cin>>choice;
 		switch(choice){
